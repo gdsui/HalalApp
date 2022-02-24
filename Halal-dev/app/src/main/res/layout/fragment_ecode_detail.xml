@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/size_16dp"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="E105" />
+
+        <com.motionweb.halal.customview.FoodTypeButton
+            android:id="@+id/food_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tv_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_12dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            tools:text="Тамак -аш кошулмалары E105 (Yellow Yellow AB) - бул синтетикалык сары боек. Е105 кошумчасынын молекулярдык формуласы: C 12 H 11 N 3 O 6 S 2 . Бул боёк азот кошулмаларына негизделген азо боектор тобуна кирет." />
+
+        <TextView
+            android:id="@+id/tv_impact_label"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_32dp"
+            android:text="@string/body_impact"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+        <TextView
+            android:id="@+id/tv_impact_harmful_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:text="@string/harmful"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/text_16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_impact_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_impact_label" />
+
+        <View
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="@dimen/size_4dp"
+            android:layout_marginBottom="6dp"
+            android:background="#FF0000"
+            app:layout_constraintBottom_toBottomOf="@id/tv_impact_harmful_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_impact_harmful_label" />
+
+        <TextView
+            android:id="@+id/tv_harmful_description"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_12dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_impact_harmful_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_impact_harmful_label"
+            tools:text="Тамак -аш кошулмалары E105 Америка Кошмо Штаттарында жана Европанын көпчүлүк өлкөлөрүндө тамак -ашта колдонууга тыюу салынат, анткени ал организмге уулуу экени далилденген." />
+
+
+        <TextView
+            android:id="@+id/tv_useful_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_12dp"
+            android:text="@string/useful"
+            android:textColor="#4CD964"
+            android:textSize="@dimen/text_16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_harmful_description" />
+
+        <View
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="@dimen/size_4dp"
+            android:layout_marginBottom="6dp"
+            android:background="#4CD964"
+            app:layout_constraintBottom_toBottomOf="@id/tv_useful_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_useful_label" />
+
+        <TextView
+            android:id="@+id/tv_useful_description"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_useful_label"
+            tools:text="Синтетикалык келип чыгышынан улам, E105 кошумчасы тирүү организмдерге мүнөздүү эмес. Учурда E105 боегунун пайдасы жөнүндө илимий маалыматтар жок." />
+
+        <TextView
+            android:id="@+id/tv_usage_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:text="@string/usage"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_useful_description" />
+
+        <TextView
+            android:id="@+id/tv_usage_description"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_12dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_usage_label"
+            tools:text="Бирок, арзандыгынан улам, E105 боегу бир катар өлкөлөрдө тамак -аш өнөр жайында колдонулууну улантууда. Э105 эң кеңири таралган кошумчасы Чыгыш өлкөлөрүндө (Кытай, Таиланд, Индия) алынган. Ал жерде кондитер азыктарын жана кээ бир суусундуктарды боёо үчүн кеңири колдонулат.
+E105 боегу табигый булалардын бардык түрлөрүн (жүн, пахта, жибек), ошондой эле синтетикалык материалдарды (полиэстерлер, акрил булалары) боёо үчүн колдонулушу мүмкүн. Ошондой эле азо боёгу E105 боекторду жана пластмассаларды өндүрүүдө колдонулат." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

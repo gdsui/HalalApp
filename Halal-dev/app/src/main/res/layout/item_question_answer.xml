@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_author_avatar"
+            android:layout_width="@dimen/size_60dp"
+            android:layout_height="@dimen/size_60dp"
+            android:layout_marginTop="@dimen/padding_16dp"
+            android:layout_marginEnd="@dimen/padding_8dp"
+            android:layout_marginBottom="@dimen/padding_8dp"
+            android:padding="@dimen/padding_4dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:srcCompat="@drawable/banner_fake_image"
+            app:strokeColor="@color/main_blue"
+            app:strokeWidth="1dp" />
+
+        <TextView
+            android:id="@+id/tv_author_name"
+            style="@style/BlueBoldTitleAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/padding_8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Акылбек  у  Кубаныч" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_question_label"
+        style="@style/BlueBoldTitleAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        style="@style/BaseTextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_8dp"
+        android:textColor="@color/main_blue"
+        tools:text="Теорияда, бул маселе унаа айдаганды такыр билбеген адамга айдоочу күбөлүгүн берип койгондой эле кеп. Айдаганды билбеген айдоочу кандай кооптуу болсо, жалган тастыктоо алган өндүрүшчү андан бетер коркунучтуу." />
+
+    <TextView
+        android:id="@+id/tv_answer_label"
+        style="@style/BlueBoldTitleAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_16dp"
+        android:text="@string/answer" />
+
+    <TextView
+        android:id="@+id/tv_answer"
+        style="@style/BaseTextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_8dp"
+        android:textColor="@color/main_blue"
+        tools:text="Теорияда, бул маселе унаа айдаганды такыр билбеген адамга айдоочу күбөлүгүн берип койгондой эле кеп. Айдаганды билбеген айдоочу кандай кооптуу болсо, жалган тастыктоо алган өндүрүшчү андан бетер коркунучтуу." />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/padding_16dp"
+        android:layout_marginBottom="@dimen/padding_8dp"
+        android:background="@color/main_blue" />
+
+
+</LinearLayout>

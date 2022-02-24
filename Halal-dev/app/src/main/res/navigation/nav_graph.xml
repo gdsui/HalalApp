@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.motionweb.halal.ui.fragment.main.MainFragment"
+        android:label="@string/main" />
+
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.motionweb.halal.ui.fragment.catalog.CategoriesFragment"
+        android:label="@string/categories"
+        tools:layout="@layout/fragment_catalog">
+        <action
+            android:id="@+id/toCompaniesFragment"
+            app:destination="@id/companiesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/companiesFragment"
+        android:name="com.motionweb.halal.ui.fragment.catalog.CompaniesFragment"
+        android:label="@string/companies"
+        tools:layout="@layout/fragment_catalog">
+        <action
+            android:id="@+id/toCompanyDetailFragment"
+            app:destination="@id/companyDetailFragment" />
+        <argument
+            android:name="categoryId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/companyDetailFragment"
+        android:name="com.motionweb.halal.ui.fragment.catalog.CompanyDetailFragment"
+        android:label="@string/company_categories"
+        tools:layout="@layout/fragment_catalog">
+        <action
+            android:id="@+id/toProductsFragment"
+            app:destination="@id/productsFragment" />
+        <argument
+            android:name="companyId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.motionweb.halal.ui.fragment.catalog.ProductsFragment"
+        android:label="@string/company_products"
+        tools:layout="@layout/fragment_catalog">
+        <argument
+            android:name="companyId"
+            app:argType="long" />
+        <argument
+            android:name="categoryId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.motionweb.halal.ui.fragment.menu.MenuFragment"
+        android:label="@string/menu">
+        <action
+            android:id="@+id/toProfileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/toQuestionsFragment"
+            app:destination="@id/questionAnswerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eCodeFragment"
+        android:name="com.motionweb.halal.ui.fragment.ecode.ECodeFragment"
+        android:label="@string/e_code">
+        <action
+            android:id="@+id/action_eCodeFragment_to_eCodeDetailFragment"
+            app:destination="@id/eCodeDetailFragment">
+            <argument
+                android:name="ecode"
+                app:argType="com.motionweb.halal.data.network.ecode.ECode" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.motionweb.halal.ui.fragment.profile.ProfileFragment"
+        android:label="@string/lk"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/eCodeDetailFragment"
+        android:name="com.motionweb.halal.ui.fragment.ecode.detail.ECodeDetailFragment"
+        android:label="@string/e_code"
+        tools:layout="@layout/fragment_ecode_detail">
+        <argument
+            android:name="ecode"
+            app:argType="com.motionweb.halal.data.network.ecode.ECode" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/islamicCalendarFragment"
+        android:name="com.motionweb.halal.ui.fragment.calendar.IslamicCalendarFragment"
+        android:label="@string/calendar" />
+    <fragment
+        android:id="@+id/prayerTimeFragment"
+        android:name="com.motionweb.halal.ui.fragment.prayertime.PrayerTimeFragment"
+        android:label="@string/prayer_time" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.motionweb.halal.ui.fragment.settings.SettingsFragment"
+        android:label="@string/settings" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.motionweb.halal.ui.fragment.about.AboutFragment"
+        android:label="@string/about_app" />
+    <fragment
+        android:id="@+id/eventFragment"
+        android:name="com.motionweb.halal.ui.fragment.event.EventFragment"
+        android:label="@string/event" />
+    <fragment
+        android:id="@+id/questionAnswerFragment"
+        android:name="com.motionweb.halal.ui.fragment.questions.QuestionAnswerFragment"
+        android:label="@string/q_a"
+        tools:layout="@layout/fragment_question_answer" />
+    <fragment
+        android:id="@+id/requestsFragment"
+        android:name="com.motionweb.halal.ui.fragment.requests.RequestsFragment"
+        android:label="@string/requests" />
+    <fragment
+        android:id="@+id/editUsernameFragment"
+        android:name="com.motionweb.halal.ui.fragment.profile.edit.EditUsernameFragment"
+        android:label="@string/username_edit" />
+    <fragment
+        android:id="@+id/editPhoneFragment"
+        android:name="com.motionweb.halal.ui.fragment.profile.edit.EditPhoneFragment"
+        android:label="@string/phone_edit" />
+    <fragment
+        android:id="@+id/languageFragment2"
+        android:name="com.motionweb.halal.ui.onboarding.fragment.language.LanguageFragment"
+        android:label="@string/choose_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/countryFragment2"
+        android:name="com.motionweb.halal.ui.onboarding.fragment.country.CountryFragment"
+        android:label="@string/choose_country"
+        tools:layout="@layout/fragment_country" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.motionweb.halal.ui.fragment.login.LoginFragment" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.motionweb.halal.ui.fragment.user.UserFragment"
+        android:label="@string/lk" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.motionweb.halal.ui.fragment.favorite.FavoriteFragment"
+        android:label="@string/favourite" />
+    <fragment
+        android:id="@+id/languagePrefsFragment"
+        android:name="com.motionweb.halal.ui.fragment.LanguagePrefsFragment"
+        android:label="@string/language" />
+    <fragment
+        android:id="@+id/certificatesFragment"
+        android:name="com.motionweb.halal.ui.fragment.certificates.CertificatesFragment"
+        android:label="@string/about_halal_certification" />
+    <fragment
+        android:id="@+id/detailCertificateFragment"
+        android:name="com.motionweb.halal.ui.fragment.certificates.detail.DetailCertificateFragment"
+        android:label="@string/about_halal_certification" />
+</navigation>

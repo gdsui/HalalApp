@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_blue"
+        android:paddingHorizontal="@dimen/size_16dp"
+        android:paddingBottom="@dimen/size_16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mc_about"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_80dp"
+            app:cardBackgroundColor="@color/main_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@android:color/white"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/size_16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_8dp"
+                    android:text="@string/about_company"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <com.motionweb.halal.customview.RequestInput
+                    android:id="@+id/ri_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_24dp"
+                    app:label_text="@string/company_name_label" />
+
+                <com.motionweb.halal.customview.RequestInput
+                    android:id="@+id/ri_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_16dp"
+                    app:label_text="@string/address" />
+
+                <com.motionweb.halal.customview.RequestInput
+                    android:id="@+id/ri_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_16dp"
+                    app:label_text="@string/product_type" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mc_contacts"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_30dp"
+            app:cardBackgroundColor="@color/main_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mc_about"
+            app:strokeColor="@android:color/white"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/size_16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_8dp"
+                    android:text="@string/contact_info"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_18sp" />
+
+                <com.motionweb.halal.customview.RequestInput
+                    android:id="@+id/ri_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:label_text="@string/fullname" />
+
+                <com.motionweb.halal.customview.RequestInput
+                    android:id="@+id/ri_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_16dp"
+                    app:label_text="@string/phone" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_32dp"
+            android:text="@string/add"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mc_contacts"
+            app:strokeColor="@android:color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_16dp"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/btn_add"
+            app:layout_constraintEnd_toStartOf="@id/btn_add"
+            app:layout_constraintTop_toTopOf="@id/btn_add"
+            app:strokeColor="@android:color/white" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

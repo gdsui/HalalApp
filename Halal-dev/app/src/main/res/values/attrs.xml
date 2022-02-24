@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PrayerView">
+        <attr name="top_text" format="string" />
+        <attr name="bottom_text" format="string" />
+        <attr name="prayer_top_text" format="string" />
+        <attr name="prayer_bottom_text" format="string" />
+        <attr name="icon" format="reference" />
+        <attr name="prayer_icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="NavigationRowView">
+        <attr name="title"/>
+        <attr name="icon"/>
+        <attr name="show_chevron" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RequestInput">
+        <attr name="label_text" format="string" />
+    </declare-styleable>
+
+</resources>

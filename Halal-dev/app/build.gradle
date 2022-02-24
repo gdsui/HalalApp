@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id("dagger.hilt.android.plugin")
+    id("androidx.navigation.safeargs")
+    id("kotlin-parcelize")
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.motionweb.halal"
+        minSdk 23
+        multiDexEnabled true
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        all {
+            buildConfigField("String", "BASE_URL", '"http://159.65.120.217/api/v1/"')
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation libs.androidKtx.values()
+    implementation libs.android.values()
+    implementation libs.navigation.values()
+
+    implementation libs.lifecycle.values()
+    implementation libs.camerax.values()
+
+    implementation(libs.hilt.hilt)
+    kapt(libs.hilt.compiler)
+
+    implementation libs.network.values()
+
+    implementation libs.room.values()
+    kapt libs.roomCompiler
+    kapt "org.xerial:sqlite-jdbc:3.36.0"
+
+    implementation libs.barcodeScanner
+
+    testImplementation libs.test.junit
+    androidTestImplementation libs.test.junitExt
+    androidTestImplementation libs.test.espressoCore
+}
+// Allow references to generated code
+kapt {
+    correctErrorTypes true
+}

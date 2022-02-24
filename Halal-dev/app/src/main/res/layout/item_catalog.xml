@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/radius_10dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/padding_16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="@dimen/size_48dp"
+                android:layout_height="@dimen/size_48dp"
+                tools:visibility="gone"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_favourite_filled"
+                app:shapeAppearanceOverlay="@style/circleImageView" />
+
+            <FrameLayout
+                android:id="@+id/fl_category"
+                android:layout_width="@dimen/size_48dp"
+                android:layout_height="@dimen/size_48dp"
+                android:background="@drawable/ic_category_background">
+
+                <ImageView
+                    android:id="@+id/iv_category"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="@color/white"
+                    android:layout_gravity="center"
+                    tools:src="@drawable/ic_account"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/padding_16dp"
+                android:layout_marginEnd="@dimen/padding_16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Белая река" />
+
+            <ImageView
+                android:id="@+id/iv_chevron"
+                android:layout_width="@dimen/size_24dp"
+                android:layout_height="@dimen/size_24dp"
+                android:src="@drawable/ic_chevron" />
+
+            <CheckBox
+                android:id="@+id/cb_favourite"
+                android:layout_width="@dimen/size_24dp"
+                android:layout_height="@dimen/size_24dp"
+                android:button="@drawable/favourite_checkbox_selector" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

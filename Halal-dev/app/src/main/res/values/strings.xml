@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">Halal</string>
+    <string name="main">Главная</string>
+    <string name="catalog">Каталог</string>
+    <string name="menu">Меню</string>
+    <string name="search_label_text">Поиск</string>
+    <string name="search_hint">Поиск</string>
+    <string name="language">Язык</string>
+    <string name="country">Страна</string>
+    <string name="next">Далее</string>
+    <string name="kyrgyz">Кыргызча</string>
+    <string name="russian">Русский</string>
+    <string name="kg">Кыргызстан</string>
+    <string name="cis">СНГ</string>
+    <string name="asia">Азия</string>
+    <string name="europe">Европа</string>
+    <string name="usa">Америка</string>
+    <string name="africa">Африка</string>
+    <string name="ru">Россия</string>
+    <string name="e_code">E Коды</string>
+    <string name="favourite">Избранное</string>
+    <string name="requests">Заявки</string>
+    <string name="questionable">Сомнение</string>
+    <string name="haram">Харам</string>
+    <string name="categories">Категории</string>
+    <string name="companies">Компании</string>
+    <string name="company_categories">Категории компании</string>
+    <string name="company_products">Продукция компании</string>
+    <string name="halal">Халал</string>
+    <string name="body_impact">Воздействие на организм</string>
+    <string name="harmful">Вредный</string>
+    <string name="useful">Полезный</string>
+    <string name="usage">Применение</string>
+
+    <!--    menu-->
+    <string name="lk">Личный кабинет</string>
+    <string name="event">Событие</string>
+    <string name="q_a">Вопросы и ответы</string>
+    <string name="about_halal">Об органе по сертификации халяль</string>
+    <string name="about_app">О приложении</string>
+    <string name="share">Поделиться в…</string>
+    <string name="settings">Настройки</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="tap_to_edit">Нажмите, чтобы изменить</string>
+    <string name="day">День</string>
+    <string name="month">Месяц</string>
+    <string name="year">Год</string>
+    <string name="sex">Пол</string>
+    <string name="male">Мужской</string>
+    <string name="female">Женский</string>
+    <string name="cancel">Отмена</string>
+    <string name="save">Сохранить</string>
+    <string name="hijri_calendar">Календарь</string>
+    <string name="hijri">Хиджры</string>
+    <string name="prayer_time">"Время молитвы"</string>
+    <string name="first_prayer_name">Фаджр</string>
+    <string name="second_prayer_name">Восход</string>
+    <string name="third_prayer_name">Зухр</string>
+    <string name="fourth_prayer_name">Аср</string>
+    <string name="fifth_prayer_name">Магриб</string>
+    <string name="sixth_prayer_name">Иша</string>
+    <string name="choose_country">Выберите страну</string>
+    <string name="choose_language">Выберите язык</string>
+    <string name="halal_industry">Халал индустрия</string>
+    <string name="licenses">Лицензии</string>
+    <string name="event_title">Вы также можете добавить свои собственные объявления</string>
+    <string name="event_manager">Нажмите, чтобы связываться с менеджером</string>
+    <string name="question">Вопрос:</string>
+    <string name="answer">Ответ:</string>
+    <string name="send_question">Отправить вопрос</string>
+    <string name="company_name_label">Имя компании</string>
+    <string name="inn">ИНН</string>
+    <string name="product_type">Тип продукта</string>
+    <string name="about_company">О компании</string>
+    <string name="contact_info">Контактная информация</string>
+    <string name="fullname">Ф.И.О</string>
+    <string name="phone">"Тел: "</string>
+    <string name="add">Добавить</string>
+
+    <string name="ad_here_label">Здесь может быт ваше реклама!</string>
+    <string name="calendar">Календарь</string>
+    <string name="change_name">Изменить имя</string>
+    <string name="select_photo">Выбрать фотографию</string>
+    <string name="done">Готово</string>
+    <string name="username_edit">Изменить имя</string>
+    <string name="phone_edit">Изменить номер</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="input_number">Введите номер телефона</string>
+    <string name="empty_list">Список пуст</string>
+    <string name="register">Регистрация</string>
+    <string name="enter_your_question">Введите ваш вопрос</string>
+    <string name="edit_text_error_message">Вопрос не должен быть пустым!</string>
+    <string name="not_registered">Зарегистрируйтесь или войдите</string>
+    <string name="email">Введите почту</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="email_input_error">Введите почту!</string>
+    <string name="password_input_error">Пароль не должен быть пустым!</string>
+    <string name="phone_input_error">Введите номер телефона!</string>
+    <string name="username_input_error">Введите имя пользователя!</string>
+    <string name="already_logged_in">Вы уже авторизованы!</string>
+    <string name="select_gender_error">Выберите пол!</string>
+    <string name="question_is_sent">Вопрос успешно отправлен.</string>
+    <string name="access_permission">Разрешите доступ к чтению</string>
+    <string name="username_label">Имя</string>
+    <string name="phone_label">Телефон</string>
+    <string name="phone_hint" translatable="false">0### ## ## ##</string>
+    <string name="email_label">Почта</string>
+    <string name="email_hint" translatable="false">erfrxcdx@mail.com</string>
+    <string name="password_label">Пароль</string>
+    <string name="password_hint" translatable="false">*********</string>
+    <string name="password_repeat_label">Повторите пароль</string>
+    <string name="user_exist">Такой пользователь уже существует.</string>
+    <string name="network_lose_title">Похоже пропал интернет</string>
+    <string name="network_lose_message">Проверьте интернет-соединение</string>
+    <string name="network_positive_btn_text">Хорошо</string>
+    <string name="error_occurred">Произошла ошибка, попробуйте еще раз</string>
+    <string name="registration_error">Ошибка при регистрации</string>
+    <string name="success_registration">Вы успешно зарегистрированы!</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="try_again">Попробуйте еще раз.</string>
+    <string name="passwords_dont_match">Пароли должны совпадать</string>
+    <string name="login">Войти</string>
+    <string name="just_email">Почта</string>
+    <string name="exit">Выход</string>
+    <string name="or">ИЛИ</string>
+    <string name="success_login">Вы успешно вошли!</string>
+    <string name="empty_favorites">Ваш список избранных пуст</string>
+    <string name="address">Адресс</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_kg">Кыргызча</string>
+    <string name="language_array_title">Язык</string>
+    <string name="pref_key_info_hide" translatable="false">ih</string>
+    <string name="scanner" translatable="false">scanner</string>
+    <string name="scanning" translatable="false">Сканирование</string>
+    <string name="permission_rationale_message">Эта функция требует разрешения</string>
+    <string name="about_halal_certification">Об органе по сертификации халяль</string>
+    <string name="product_certified">Товар сертифицирован</string>
+    <string name="product_non_certified">Товар не найден в базе данных</string>
+    <string name="could_not_determine_the_code">Не удалось определить код</string>
+    <string name="ok">Хорошо</string>
+    <string name="product_status_unknown">Неизвестный статус товара</string>
+
+    <string-array name="months">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+
+    <string-array name="language_array">
+        <item>@string/lang_ru</item>
+        <item>@string/lang_kg</item>
+    </string-array>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_blue"
+    android:padding="@dimen/size_8dp">
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".5"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Имя компании" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_main"
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_16sp"
+        app:layout_constraintEnd_toStartOf="@id/iv_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_label"
+        tools:text="Motion Web" />
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pencil"
+        app:layout_constraintBottom_toBottomOf="@id/et_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_label" />
+
+    <View
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/size_4dp"
+        android:alpha=".5"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_main" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

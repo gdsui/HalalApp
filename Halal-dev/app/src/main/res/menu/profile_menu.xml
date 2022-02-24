@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/change_name"
+        android:icon="@drawable/ic_user_pencil"
+        app:showAsAction="never"
+        android:title="@string/change_name" />
+
+    <item
+        android:id="@+id/change_photo"
+        android:icon="@drawable/ic_user_camera"
+        app:showAsAction="never"
+        android:title="@string/select_photo" />
+
+</menu>

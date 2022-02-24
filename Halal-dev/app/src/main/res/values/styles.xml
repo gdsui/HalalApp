@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.App.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="colorPrimary">@color/main_blue</item>
+        <item name="colorPrimaryVariant">@color/main_blue</item>
+        <item name="colorOnPrimary">@color/main_blue</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="titleCentered">true</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Headline3.Toolbar</item>
+    </style>
+
+    <style name="TextAppearance.Headline3.Toolbar" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_20sp</item>
+    </style>
+
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="WhiteOutlinedInputFiledStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/OutlineInputColorOverlay</item>
+        <item name="boxStrokeColor">@drawable/input_text_bg_selector</item>
+        <item name="helperTextTextColor">@color/white</item>
+    </style>
+
+    <style name="OutlineInputColorOverlay" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnSurface">@color/white</item>
+    </style>
+
+    <style name="OutlineDropDownColorOverlay" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnSurface">@color/white</item>
+    </style>
+
+    <style name="RadioButtonStyle">
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorSecondary">@color/gray</item>
+    </style>
+
+
+    <!--    Text styles-->
+    <style name="BaseTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_14sp</item>
+    </style>
+
+    <style name="TitleTextAppearance" parent="BaseTextAppearance">
+        <item name="android:textSize">@dimen/text_20sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="BlueBoldTitleAppearance" parent="TitleTextAppearance">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/main_blue</item>
+    </style>
+
+    <style name="SecondaryTitleTextAppearance" parent="BaseTextAppearance">
+
+    </style>
+
+    <style name="SmallHintTextAppearance" parent="BaseTextAppearance">
+        <item name="android:textSize">@dimen/text_10sp</item>
+    </style>
+
+
+</resources>

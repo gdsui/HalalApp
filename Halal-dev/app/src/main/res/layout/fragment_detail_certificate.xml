@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mc_logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/size_12dp"
+            app:cardCornerRadius="@dimen/size_12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:theme="@style/circleImageView" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/size_30dp"
+            android:layout_marginTop="@dimen/size_12dp"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mc_logo"
+            tools:text="Центр развития Халал индустрии.
+Орган по сертификации" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_description"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_30dp"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_14sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_title"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            tools:text="Мусульмане стран Персидского Залива составляют лишь 12% от общего числа, большую часть мусульман составляют жители Азии и Европы примерно 1,6 миллиард мусульман. Внедрив стандарты и получив сертификат ХАЛАЛ, Вы получаете доверие мусульман всего Мира относительно выпускаемого продукта или предоставляемой услуги." />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="@dimen/padding_8dp"
+            android:background="@drawable/certificate_bg"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/size_24dp"
+            android:paddingVertical="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description"
+            app:layout_goneMarginTop="@dimen/size_8dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_one"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/radius_10dp"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_two"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/radius_10dp"
+                android:layout_weight="1" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

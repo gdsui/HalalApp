@@ -1,0 +1,12 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.motionweb.halal.customview.RadioButtonPreference
+        app:key="languageRU"
+        app:title="@string/lang_ru" />
+
+    <com.motionweb.halal.customview.RadioButtonPreference
+        app:allowDividerAbove="true"
+        app:key="languageKG"
+        app:title="@string/lang_kg" />
+
+</PreferenceScreen>

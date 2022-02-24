@@ -1,0 +1,103 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/size_8dp"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_send_label"
+            style="@style/BlueBoldTitleAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/size_8dp"
+            android:layout_marginTop="@dimen/padding_16dp"
+            android:text="@string/send_question"
+            android:textSize="@dimen/text_24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_input_question"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="140dp"
+            android:layout_marginHorizontal="@dimen/size_8dp"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:layout_marginBottom="@dimen/size_8dp"
+            android:hint="@string/enter_your_question"
+            android:minHeight="@dimen/size_120dp"
+            app:boxStrokeColor="@color/main_blue"
+            app:boxStrokeWidth="1dp"
+            app:errorEnabled="true"
+            app:hintAnimationEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_send_label">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_edit"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="top"
+                android:gravity="top|start"
+                android:minHeight="@dimen/size_100dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/size_16dp"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:paddingVertical="@dimen/size_12dp"
+            android:text="@string/cancel"
+            android:textColor="@color/main_blue"
+            app:layout_constraintEnd_toStartOf="@id/btn_save"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_input_question"
+            app:strokeColor="@color/main_blue" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_8dp"
+            android:paddingVertical="@dimen/size_12dp"
+            android:text="@string/save"
+            android:textColor="@color/main_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_cancel"
+            app:layout_constraintTop_toTopOf="@id/btn_cancel"
+            app:strokeColor="@color/main_blue" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:background="@color/gray"
+            android:nestedScrollingEnabled="false"
+            android:paddingStart="@dimen/padding_16dp"
+            android:paddingEnd="@dimen/padding_16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_save"
+            tools:itemCount="10"
+            tools:listitem="@layout/item_question_answer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
